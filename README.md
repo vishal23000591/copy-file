@@ -19,7 +19,20 @@ The four function is used to take each line from the main file.
 ### Step 6: 
 write() is used to write the lines of main file to the empty file or to the directed file.
 ## PROGRAM:
+```
+#Program to copy the file.
+#Developed by: Vishal S
+#Register Number: 212223110063
 
+def fun(filename,newfilename):
+   with open(filename) as fp:
+      with open(newfilename,'w') as fp1:
+         data=fp.read()
+         fp1.write(data)
+filename=input("Enter the file to read the content:")
+newfilename=input("Enter the file to store copied content:")
+fun(filename,newfilename)
+```
 ### OUTPUT:
 ![Output](</Screenshot 2024-01-02 151321.png>)
 ![Output](</Screenshot 2024-01-02 145440.png>)
